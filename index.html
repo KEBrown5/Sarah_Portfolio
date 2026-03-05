@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta author = "Kyle brown">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href = "styles.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <ul class="navbar-nav align-items-end">
+                <li class = "nav-item">
+                    <a class="btn fs-3 px-5 mx-2" href="index.html">Home</a>
+                </li>
+                <!-- <button class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#graphHeader, #menu">Menu</button> -->
+            </ul>
+        </nav>
+
+        <!-- Header Graph Image -->
+        <header id = "menuDisplay">
+            <div id = "graphHeader" class = "collapse show" data-bs-parent = "#menuDisplay">
+                <img src = "images/graphHeader.png" alt = "Squigly graph" class = "header-image">
+            </div>
+
+            <div id = "menu" class = "collapse" data-bs-parent = "#menuDisplay">
+                <div class = "container">
+                    <div class = "row align-items-center justify-content-center text-center py-5">
+                        <div class = "col-md-3">
+                            <a class = "nav-link" href = "categories.html"> Portfolio Categories</a>
+                        </div>
+                        <div class = "col-md-3">
+                            <a class = "nav-link" href = "about.html">About Us</a>
+                        </div>
+                        <div class = "col-md-3">
+                            <a class = "nav-link" href = "contact.html">Contact Us</a>
+                        </div>
+                        <div class = "col-md-3">
+                            <a class = "nav-link" href = "#">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </header>
+
+            <!-- Main Content -->
+            <main>
+                <!-- <div class = "container my-5"> -->
+                
+                    <div class = "text-center my-4">
+                        <h1 class = "featured-header">~Featured Portfolio Items~</h1>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row d-flex g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">DELCO Tobacco Retailers Impact</h5>
+                                    <p class="card-text">
+                                        This project examines the longitudinal growth and spatial distribution of tobacco and vape retailers in Delaware County,
+                                        Pennsylvania from 2018 to 2024. Using compliance data from the Pennsylvania Department of Health and geospatial layers from 
+                                        census and state sources, I applied statistical modeling in R and spatial analysis in ArcGIS to evaluate retailer density, 
+                                        demographic proximity, and distance to public schools. The analysis demonstrates how retail environments can influence 
+                                        community-level exposure patterns and provides a replicable framework to inform zoning, prevention strategy, and equity-focused 
+                                        public health planning.  
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end">
+                                <img src="images/DELCO_2024_PubSchool_Outlets.png" class="img-fluid rounded-start card-image" alt="Geospatial map of tobacco enforcement violations">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#delcoDetails" aria-expanded="false" aria-controls="delcoDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="delcoDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1wO_ZoiyNt9GiaRkI1ovg-szrbUqLTyd0/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/11lnqT-q2JCjiogIH9EJ738Tb0Ov-u9sS/edit?usp=sharing&ouid=113949058604591810250&rtpof=true&sd=true">Two Pager</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://harrisburgu.maps.arcgis.com/apps/instant/sidebar/index.html?appid=3317ccb4688f4ff9a2d0b5ac66d1bf8b">Interactive Map</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://delcopatobaccofree.wordpress.com/retailer-mapping/">Website</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://vimeo.com/1096739812?fl=pl&fe=sh">In-person Presentation</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://drive.google.com/file/d/19SLqpS1DQ6s35UZ_c-HSV3edzE9Oz6t0/view?usp=sharing">Recorded Presentation</a></li>                                      
+                                    </ul>
+
+                                    <p class = "mt-3">Tags: Geospatial Mapping, Healthcare/Public Health Analysis, Regression Modeling/Analysis, R</p>                                   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Medicare Spending Analysis</h5>
+                                    <p class="card-text">
+                                        This project analyzes whether hospital patient experience performance is associated with differences in Medicare Spending per 
+                                        Beneficiary using national CMS data. After integrating hospital general information with spending metrics in SAS Viya, a one way 
+                                        ANOVA was conducted to compare average Medicare spending across patient experience performance categories. The results revealed 
+                                        statistically significant differences, with hospitals rated below the national average in patient experience demonstrating higher 
+                                        average spending per beneficiary. The analysis highlights a measurable relationship between patient engagement performance and 
+                                        cost efficiency, demonstrating applied healthcare analytics, inferential statistical modeling, and performance based financial evaluation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 d-flex flex-column align-items-end">
+                                <img src="images/Medicare_Spend.png" class="img-fluid rounded-start card-image" alt="mspb by exp_domain">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#medicareDetails" aria-expanded="false" aria-controls="medicareDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="medicareDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1B5eHlxFyMQZdPVvq6wzXpC-21ggtVTSc/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                    </ul>
+
+                                    <p class = "mt-3">Tags: Healthcare/Public Health Analysis, Financial Analysis, SAS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Hospital Quality and Air Pollution</h5>
+                                    <p class="card-text">
+                                        This project analyzes the relationship between healthcare technology adoption, environmental exposure, 
+                                        and health outcomes using SAS Viya and SQL. The first analysis evaluates whether acute-care hospitals 
+                                        that meet electronic health record interoperability standards are associated with higher CMS five-star 
+                                        quality ratings, applying chi-square testing to assess statistical independence. The second examines the 
+                                        relationship between particulate matter levels and county-level health indicators, including diabetes 
+                                        prevalence, low birthweight, mental distress, general health status, and life expectancy, using Pearson 
+                                        correlation analysis. Drawing from large-scale national datasets, the project demonstrates applied 
+                                        statistical testing, data cleaning, and exploratory analysis to evaluate how digital transformation and 
+                                        environmental conditions influence healthcare quality and population health trends.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end justify">
+                                <img src="images/Hop_Air_Qual.png" class="img-fluid rounded-start card-image" alt="Air Quality Graph">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#hospitalDetails" aria-expanded="false" aria-controls="hospitalDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="hospitalDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1BnNfuohVp6w4YbKrpCt16mtbrnc6T5cl/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                    </ul>
+                                    <p class = "mt-3">Tags: Healthcare/Public Health Analysis, Population Studies, SAS, SQL</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Mammography & Socioeconomic Predictors</h5>
+                                    <p class="card-text">
+                                        This project examines the relationship between mammography screening rates and key socioeconomic determinants 
+                                        using county-level data and multiple linear regression in SAS Viya. After integrating demographic, clinical care, 
+                                        and social economic datasets, exploratory analysis and visualization were conducted to assess trends between preventive 
+                                        screening participation and factors such as uninsured rates, child poverty, and primary care physician availability. 
+                                        The final regression model demonstrated statistically significant relationships across all predictors, with higher 
+                                        uninsured and poverty rates associated with lower screening participation and greater access to primary care linked 
+                                        to increased screening uptake. This analysis highlights the structural influence of socioeconomic and healthcare access 
+                                        conditions on preventive health behavior and demonstrates applied regression modeling, data integration, and public health 
+                                        analytics to evaluate disparities in healthcare utilization.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end">
+                                <img src="images/Mammo_Socio.png" class="img-fluid rounded-start card-image" alt="Scatter plot of mammograhpy screening vs. socioeconomic factors">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#mammoDetails" aria-expanded="false" aria-controls="mammoDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="mammoDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1ZnOb6__dYlDcueA9S6Hw3Ha-TmgvNxq0/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                    </ul>
+
+                                    <p class = "mt-3">Tags: Healthcare/Public Health Analysis, Regression Modeling/Analysis, SAS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Real Estate Modeling</h5>
+                                    <p class="card-text">
+                                        This project involved building and validating a multiple linear regression model to predict residential sale prices in Ames, 
+                                        Iowa using structured training and testing datasets in R. After conducting exploratory analysis to assess distribution patterns 
+                                        and key market characteristics, I developed a model that explained approximately 84.7 percent of the variability in housing prices. 
+                                        Significant predictors included overall home quality, living area, basement square footage, lot size, and year built. Model 
+                                        performance was evaluated using out of sample testing and achieved a Mean Absolute Percentage Error of approximately 15 percent, 
+                                        demonstrating strong practical accuracy. This project highlights applied predictive modeling, feature evaluation, statistical validation, 
+                                        and end to end model development for real world forecasting.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end">
+                                <img src="images/Real_Estate.png" class="img-fluid rounded-start card-image" alt="Distribution of house prices bar graph"> 
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#estateDetails" aria-expanded="false" aria-controls="estateDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="estateDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1uRuIDUL7c0PVaU0pVnVkgsLeHOXs5LMM/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://drive.google.com/file/d/1JIgzw4e2-nF-d7gFKAFO83WRJmAKST6m/view?usp=sharing">R Analysis</a></li>
+                                    </ul>
+
+                                    <p class = "mt-3">Tags:  Business Systems Implementation & Analysis, Regression Modeling/Analysis, Financial Analysis, R</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Math Education Analysis</h5>
+                                    <p class="card-text">
+                                        This project evaluated the effectiveness of the ALEKS adaptive learning platform in Harrisburg University's pre algebra courses by comparing 
+                                        student outcomes between technology assisted sections and traditional lecture sections. Using historical and recent course data, I built and 
+                                        analyzed a structured dataset using PostgreSQL, Excel, and R, applying statistical methods including two sample t tests and chi squared tests
+                                        to examine differences in overall grades and pass rates. The results indicated no statistically significant difference in achievement between 
+                                        the two instructional approaches, though analysis revealed a positive relationship between time spent in the ALEKS system and student performance. 
+                                        While the findings suggest the software did not significantly change pass rates in the short term, the study provides an analytical framework for 
+                                        evaluating instructional technology and highlights the importance of longitudinal data when assessing educational interventions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end">
+                                <img src="images/mathPlot.png" class="img-fluid rounded-start card-image" alt="Distribution of house prices bar graph">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#mathDetails" aria-expanded="false" aria-controls="mathDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="mathDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/14CJdwy1NBuAi2cnpgutH1Gre-jnALL7p/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                    </ul>
+
+                                    <p class = "mt-3">Tags: SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card featured-card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Johnson Database</h5>
+                                    <p class="card-text">
+                                        This project involved the design and implementation of a fully normalized relational database to replace Johnson Video Store's manual, 
+                                        paper based record keeping system. The solution centralizes rental and return transactions, inventory management, distributor catalog data, 
+                                        and stakeholder records within a structured SQL environment governed by clearly defined constraints and referential integrity. Developed from 
+                                        conceptual Entity Relationship modeling through physical schema implementation and data validation, the system supports day to day operations 
+                                        while enabling advanced analytical querying for inventory optimization, procurement planning, and performance evaluation. The project 
+                                        demonstrates applied database design principles, normalization practices, and the effective translation of business requirements into a scalable
+                                        and reliable data architecture.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 d-flex flex-column align-items-end">
+                                <img src="images/johnsonDatabase.png" class="img-fluid rounded-start card-image" alt="Datbase ERD">
+                                <button class = "text-body-secondary nav-link card-btn" data-bs-toggle="collapse" data-bs-target="#johnsonDetails" aria-expanded="false" aria-controls="johnsonDetails">
+                                    Read more...
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="johnsonDetails">
+                                <div class="card-body pt-0">
+                                    <ul class = "navbar-nav mx-2">
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/document/d/1GzW3LPI5jHtFf5rrHP1NfRbolBZ24Q-P/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Full Report</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/spreadsheets/d/1RRHxeEhyK-i96HPqOA36VG6de-1jOPgL/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Data</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = "https://docs.google.com/spreadsheets/d/1LVgC-OeL9iC0YSoTU38Dp4XDzUZz-kLV/edit?usp=sharing&ouid=110553662450596415730&rtpof=true&sd=true">Data Dictionary</a></li>
+                                        <li class = "nav-item"><a class = "nav-link" href = ""></a></li>
+                                    </ul>
+
+                                    <p class = "mt-3">Tags: Business Systems Implementation & Analysis, Relational Databases, SQL</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+            </main>
+        
+        <!-- <footer>
+            <nav class="navbar navbar-expand-lg shadow-sm flex-column">
+                <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <li class = "nav-item"><a class = "nav-link" href = "#">Home</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#">Portfolio</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#">Contact us</a></li>
+                </ul>                 
+                <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <li class = "nav-item"><a class = "nav-link" href = "#">Menu</a></li>
+                    <li class = "nav-item"><a class = "nav-link" href = "#">About Us</a></li>
+                </ul>     
+            </nav>
+        </footer> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
